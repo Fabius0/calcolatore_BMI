@@ -1,0 +1,20 @@
+.body{
+    background-color: #F1F3F5;
+}
+.main{
+    padding: 0px, 60px;
+
+}
+.card{
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+}
+.rigaForm{
+
+}
+.card.sottopeso{
+    background-color: #E3EEF9;
+    border-color: #2F6FB3;
+    text-decoration-color: #2F6FB3;
+}
