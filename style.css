@@ -1,20 +1,132 @@
-.body{
+body {
     background-color: #F1F3F5;
+    color: #1F2328;
+    font-family: sans-serif;
+    margin: 0;
 }
-.main{
-    padding: 0px, 60px;
 
+.main {
+    padding: 60px 60px;
+    text-align: center;
 }
-.card{
+
+.titolo {
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+
+.card {
     background-color: white;
+    width: 360px;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 24px;
-    border-radius: 10px;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    text-align: left;
 }
-.rigaForm{
 
+.rigaForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
 }
-.card.sottopeso{
+
+.rigaForm label {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.rigaForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1F2328;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+.card.centrata {
+    text-align: center;
+}
+
+.nome {
+    margin: 0 0 10px 0;
+}
+
+.dati {
+    margin: 0 0 16px 0;
+}
+
+.valore {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+}
+
+.categoria {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.link {
+    margin-top: 28px;
+}
+
+.link a {
+    color: #1F2328;
+}
+
+
+
+
+
+
+.card.sottopeso {
     background-color: #E3EEF9;
     border-color: #2F6FB3;
     text-decoration-color: #2F6FB3;
+}
+.sottopeso.categoria {
+    color: #2F6FB3;
+}
+
+.card.normopeso {
+    background-color: #E3F4E6;
+    border-color: #256D34;
+    text-decoration-color: #256D34;
+}
+.normopeso.categoria {
+    color: #256D34;
+}
+
+.card.sovrappeso {
+    background-color: #FCEBD7;
+    border-color: #9A4F06;
+    text-decoration-color: #9A4F06;
+}
+.sovrappeso.categoria {
+    color: #9A4F06;
+}
+
+.card.obesita {
+    background-color: #FBE2E2;
+    border-color: #B32D2D;
+    text-decoration-color: #B32D2D;
+}
+.obesita.categoria {
+    color: #B32D2D;
 }
