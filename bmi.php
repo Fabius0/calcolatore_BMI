@@ -1,3 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+        
+</head>
+<body>
+    <h1 class="titolo">Calcolatore BMI</h1>
+
+    <main>
+        <form class="card" action="bmi.php" method="POST">
+            <div class="rigaForm">
+                <label for="">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="rigaForm">
+                <label for="">Peso (kg)</label>
+                <input type="number" name="peso" id="peso" required>
+            </div>
+            <div class="rigaForm">
+                <label for="">Altezza (cm)</label>
+                <input type="number" name="altezza" id="altezza" required>
+            </div>
+            <input type="submit" name="calcola" value="Calcola">
+        
+        </form>
+    </main>
+</body>
+</html>
+
+
 <?php
 $nome=$_POST['nome'];
 $peso=$_POST['peso'];
@@ -20,6 +54,7 @@ if ($bmi >= 30){
     $classe = "obesita";
     $categoria = "Obesita";
 }
+
 ?>
 
 <!DOCTYPE html>
